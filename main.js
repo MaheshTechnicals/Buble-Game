@@ -78,7 +78,7 @@ let hitgen = () => {
 
 
 let timer = () => {
-  
+
   setTime = setInterval(() => {
     time--
 
