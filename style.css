@@ -9,6 +9,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #scorebord {
@@ -26,4 +28,30 @@ body {
 
 h2 {
   font-size: 16px;
+}
+
+#bublebox {
+  display: flex;
+
+  height: 400px;
+  width: 80%;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+}
+
+
+.bubule {
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 300px;
+  font-weight: bold;
+  margin: 5px;
+
 }
