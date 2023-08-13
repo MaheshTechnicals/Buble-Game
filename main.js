@@ -6,7 +6,7 @@ let bn = 0;
 let time = 60;
 
 
-gsap.to("img", {
+gsap.to("#main", {
   rotate: 360,
   duration: 1.6,
   scale: 2,
