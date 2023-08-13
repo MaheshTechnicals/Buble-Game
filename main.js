@@ -61,8 +61,9 @@ let allbtn = () => {
       hitgen()
 
 
-      if (score == -10) {
-        document.querySelector("#score").textContent = Number(0)
+      if (score <= 0) {
+        score = 0;
+        document.querySelector("#score").textContent = score
       }
 
 
