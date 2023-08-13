@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: #222222;
 }
 
 #scorebord {
@@ -41,6 +42,9 @@ h2 {
   align-items: center;
   justify-content: center;
   background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+  margin-bottom: 10px;
+
+
 }
 
 
@@ -69,8 +73,42 @@ h2 {
 
 span {
   padding: 10px;
-  background: white;
+  background: gold;
   color: #222222;
   border-radius: 5px;
   font-weight: bold;
+}
+
+#b4start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: gold;
+  letter-spacing: 2px;
+  font-weight: 100px;
+
+}
+
+img {
+  width: 80px;
+  margin-bottom: 30px;
+
+}
+
+
+button {
+  border: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+  color: gold;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+
 }
