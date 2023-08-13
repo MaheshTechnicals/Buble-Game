@@ -1,11 +1,9 @@
 let time = 60;
 let score = 0;
-let newhit = 0;
 let mkbuble = () => {
 
-  for (var i = 0; i < 30; i++) {
+  for (var i = 0; i < 54; i++) {
     let rn = Math.floor(Math.random() * 10)
-    newhit = rn
     let a = `<div class="bubule">${rn}</div>`
     document.querySelector("#bublebox").innerHTML += a
   }
@@ -15,7 +13,7 @@ let hitgen = () => {
 
   let hitnumber = Math.floor(Math.random() * 10)
 
-  document.querySelector("#hit").textContent = newhit
+  document.querySelector("#hit").textContent = hitnumber
 
 }
 
@@ -30,6 +28,11 @@ let timer = () => {
     }
     document.querySelector("#timer").textContent = time
 
+
+    timeleft()
+
+
+
   }, 1000)
 
 }
@@ -37,6 +40,8 @@ let timer = () => {
 let allbtn = () => {
   let button = document.querySelector("#bublebox")
   button.addEventListener("click", (e) => {
+
+
 
     let hit = document.querySelector("#hit").textContent
 
@@ -54,6 +59,14 @@ let allbtn = () => {
       document.querySelector("#bublebox").innerHTML = ""
       mkbuble()
       hitgen()
+
+
+      if (score == -10) {
+        document.querySelector("#score").textContent = Number(0)
+      }
+
+
+
     }
 
 
@@ -62,6 +75,21 @@ let allbtn = () => {
 
 
 }
+
+
+let timeleft = () => {
+
+  if (time < 10) {
+    document.querySelector("#timer").style.color = "red"
+  }
+
+
+
+
+}
+
+
+
 
 
 
