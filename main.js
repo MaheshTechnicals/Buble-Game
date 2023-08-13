@@ -33,7 +33,19 @@ let timer = () => {
 
 }
 
+let allbtn = () => {
+  let button = document.querySelector("#bublebox")
+  button.addEventListener("click", (e) => {
 
+    console.log(Number(e.target.textContent))
+
+  })
+
+
+
+
+
+}
 
 
 
@@ -43,3 +55,4 @@ let timer = () => {
 hitgen()
 mkbuble()
 timer()
+allbtn()
