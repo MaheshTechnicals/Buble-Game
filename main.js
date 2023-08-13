@@ -3,6 +3,7 @@ let button = document.querySelector("button")
 let box = document.querySelector("#bublebox")
 let setTime;
 let bn = 0;
+let time = 60;
 
 
 gsap.to("img", {
@@ -77,7 +78,7 @@ let hitgen = () => {
 
 
 let timer = () => {
-  let time = 60;
+  
   setTime = setInterval(() => {
     time--
 
