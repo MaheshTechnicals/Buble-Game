@@ -28,6 +28,7 @@ body {
 
 h2 {
   font-size: 16px;
+  color: white;
 }
 
 #bublebox {
@@ -38,6 +39,7 @@ h2 {
   border-radius: 10px;
   padding: 5px;
   align-items: center;
+  justify-content: center;
   background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
 }
 
